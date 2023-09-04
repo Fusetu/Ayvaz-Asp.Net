@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AYVAZ</title>
+  <link href="StyleSheet.css" rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 90px;
+        }
+        .auto-style3 {
+            width: 120px;
+        }
+        .auto-style4 {
+            width: 727px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        
+            <div class="navbar">
+                <asp:Image class="navbar-logo" ID="Image1" runat="server" Height="40px" ImageUrl="~/image/ayvaz_logo.png" Width="250px" />
+                <table class="navbar-table">
+                    <tr>
+                        <td><a href="#">Veri Ekle</a></td>
+                        <td><a href="#">Veri Sil</a></td>
+                        <td><a href="#">Veri Güncelle</a></td>
+                        <td><a href="#">Veri Listele</a></td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </div>
+            <hr ID="hr1"/>
+            
+        
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">    
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+</body>
+</html>
+
+
+
